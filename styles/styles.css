@@ -1,0 +1,171 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
+}
+
+:root{
+    --color-primary-white:#FFFFFF;
+    --color-primary-light:#2B7FFF;
+    --color-primary-dark:#011C44;
+
+    --color-secondary-dark-grey: #4A4A4A;
+    --color-secondary-light-grey:#747272;
+    --color-secondary-blue:#011F4A;
+    --color-secondary-yellow:#FFD02B;
+    
+}
+
+body{
+    color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    list-style-type: none;
+}
+
+address {
+    font-style: normal;
+}
+
+h2>span{
+    color: var(--color-primary-light);
+}
+
+/* Header */
+.header-link{
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header-link:hover{
+    color: var(--color-primary-light);
+    font-weight: 700;
+}
+
+/* Section one */
+.order-call-button{
+color: var(--color-primary-white);
+background-color: var(--color-primary-light);
+border: none;
+border-radius: 32px;
+cursor: pointer;
+}
+
+.order-call-button:hover{
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-light);
+}
+
+h1{
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    color: var(--color-primary-light);
+    text-transform: capitalize;
+}
+
+.hero-section-text{
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Clinic advantages */
+.section-title{
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.offers-text{
+    font-size: 22px;
+    font-weight: 38px;
+}
+
+.brand{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Why us section */
+.why-us-text{
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Procedures section */
+.procedures-text{
+    /* color:var(--color-primary-white); */
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* How to find section */
+.map{
+    width: 605px;
+    height: 481px;
+    border-radius: 32px;
+}
+
+.form-header{
+font-size: 22px;
+font-weight: 600;
+line-height: normal;
+}
+
+.form-span{
+color: var(--color-primary-light);
+}
+
+
+/* Footer */
+
+footer{
+    background-color: var(--color-secondary-blue);
+}
+.footer-link{
+    color: var(--color-primary-white);
+    font-size: 16px;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.address-link{
+    color: var(--color-primary-white);
+    font-size: 16px;
+    line-height: normal;
+    text-decoration: none;
+    
+    
+}
+
+.address-copyright{
+    font-size: 13px;
+    color: var(--color-secondary-light-grey);
+    line-height: normal;
+}
+
+
+
+
+
+
