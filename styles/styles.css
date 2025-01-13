@@ -25,11 +25,30 @@
     --color-secondary-yellow:#FFD02B;
     
 }
+*{
+    box-sizing: border-box;
+}
 
 body{
     color: var(--color-primary-dark);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    margin: 0;
+    
+}
+
+p{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
 }
 
 ul{
@@ -44,7 +63,50 @@ h2>span{
     color: var(--color-primary-light);
 }
 
+h1 {
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    color: var(--color-primary-light);
+    text-transform: capitalize;
+}
+
 /* Header */
+.header{
+    padding: 32px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav{
+    display: flex;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 56px;
+}
+
+.header-social{
+    display: flex;
+    gap: 32px;
+
+}
 .header-link{
     color: var(--color-primary-dark);
     font-size: 18px;
@@ -54,48 +116,91 @@ h2>span{
 
 .header-link:hover{
     color: var(--color-primary-light);
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
-/* Section one */
+.header-icon{
+    fill: var(--color-primary-dark);
+}
+
+/* Hero section */
+.hero-section{
+    padding-bottom: 126px;
+    background-image:linear-gradient(89.38deg,
+                #FFFFFF 30.62%,
+                rgba(255, 255, 255, 0.850898) 41.31%,
+                rgba(255, 255, 255, 0.193204) 58.65%,
+                rgba(255, 255, 255, 0) 72.78%), url('../images/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:cover;
+    /* height: 100vh; */
+        /* Adjust to match design */
+}
+
+.hero-container{
+    max-width: 530px;
+    margin-left: 200px;
+}
+
+.hero-header{
+    margin-top: 16px;
+    margin-bottom: 40px;
+    line-height: 0.8;
+}
 .order-call-button{
 color: var(--color-primary-white);
 background-color: var(--color-primary-light);
-border: none;
+border: 2px solid var(--color-primary-light);
+font-size: 18px;
+font-weight: 600;
 border-radius: 32px;
+padding: 16px 32px;
+margin-bottom: 14px;
 cursor: pointer;
 }
 
 .order-call-button:hover{
     background-color: transparent;
     color: var(--color-primary-dark);
-    border: 2px solid var(--color-primary-light);
+    
 }
 
-h1{
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    font-weight: 700;
-    color: var(--color-primary-light);
-    text-transform: capitalize;
-}
 
-.hero-section-text{
+.hero-text{
     font-size: 12px;
     line-height: 1.5;
+    max-width: 238px;
 }
 
-/* Clinic advantages */
+/*About us */
+.about-us-section{
+    margin-bottom:176px;
+}
+.about-us-content{
+    margin-top: 40px;
+    width: 708px;
+    margin-right: 28px;
+}
 .section-title{
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 40px;
+    max-width: 530px;
 }
 
 .offers-text{
     font-size: 22px;
-    font-weight: 38px;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.offers-text:not(:last-child){
+    margin-bottom: 40px;
 }
 
 .brand{
@@ -103,14 +208,123 @@ h1{
     text-transform: capitalize;
 }
 
+.about-us-container{
+    display: flex;
+}
+.before-after-images{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items:center;
+    flex-grow: 1;
+    justify-content: space-around;
+   
+}
+.before-image, .after-image{
+    position: relative;
+    height: 328px;
+    width: 340px;
+    border-radius: 50%;
+    object-fit:cover;
+    overflow: hidden;
+    align-self: flex-start;
+}
+
+.before-image img,
+.after-image img {
+    height: 200%;
+    width: 200%;
+   
+    /* Keep aspect ratio */
+    transform: translate(0%, -25%);
+    /* Shift to show the top-left */
+}
+
+.after-image{ 
+    margin-left: calc(50% - 170px);
+}
+.after-image img {
+    transform: translate(-50%, -25%);
+    /* Shift to show the top-right */
+}
+
 /* Why us section */
+.why-us-section{
+    margin-bottom: 96px;
+}
+.card-container{
+    display: flex;
+    max-width: 1060px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    gap: 56px;
+}
+
+.card-item{
+    padding: 24px 32px;
+    width: 316px;
+    height: 182px;
+    text-align: center;
+    border: 1px solid lightblue;
+    border-radius: 32px;
+    box-shadow: 0px 4px 4px 0px #A8C6F561;
+
+}
+
+.card-icon{
+    width: 48px;
+    height: 48px;
+    fill: var(--color-primary-light);
+    margin-bottom: 8px;
+}
+.title-position{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
 .why-us-text{
     color: #000000;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5;
+    width: 252px;
 }
 
 /* Procedures section */
+.procedures-section{
+    margin-bottom: 96px;
+}
+
+.procedures-container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.procedures-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    width: 100%;
+    padding: 0;
+}
+
+.procedure-card {
+    /* width: 344px; */
+    height: 456px;
+    border-radius: 120px 4px;
+    background-image: linear-gradient(180deg,
+            rgba(1, 28, 68, 0.00) 48.53%,
+            rgba(1, 28, 68, 0.73) 84.61%,
+            var(--color-primary-dark) 101.39%);
+           
+}
+
+.procedure-item{
+    flex-basis: calc((100% - 32px) / 3);
+}
+
 .procedures-text{
     /* color:var(--color-primary-white); */
     font-size: 22px;
@@ -118,7 +332,35 @@ h1{
     text-align: center;
 }
 
+/* Slide button */
+.slide-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary-dark);
+    fill: var(--color-primary-dark);
+    background-color: var(--color-primary-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.slide-button:hover{
+    background-color: var(--color-primary-light);
+    fill: var(--color-primary-white);
+    border-color: var(--color-primary-white);
+}
+
 /* How to find section */
+.contacts-section{
+    margin-bottom: 94px;
+}
+.contacts-container{
+    display: flex;
+    gap: 32px;
+}
 .map{
     width: 605px;
     height: 481px;
@@ -138,23 +380,46 @@ color: var(--color-primary-light);
 
 /* Footer */
 
-footer{
+.footer{
     background-color: var(--color-secondary-blue);
+    padding: 56px 0;
+}
+.footer-container{
+    display: flex;
+    gap: 20px;
+}
+.footer-nav,
+.footer-address{
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+.footer-logo,
+.footer-list,
+.address-info,
+.address-list{
+    flex-grow: 1;
+    
+    
 }
 .footer-link{
     color: var(--color-primary-white);
     font-size: 16px;
-    line-height: normal;
+    line-height: 2;
     cursor: pointer;
     text-decoration: none;
 }
 
+.address-list,
+.footer-list{
+    margin: 0;
+    
+}
 .address-link{
     color: var(--color-primary-white);
     font-size: 16px;
-    line-height: normal;
-    text-decoration: none;
-    
+    line-height: 2;
+    text-decoration: none; 
     
 }
 
@@ -162,6 +427,10 @@ footer{
     font-size: 13px;
     color: var(--color-secondary-light-grey);
     line-height: normal;
+}
+
+.footer-icon{
+    fill: var(--color-primary-white);
 }
 
 
